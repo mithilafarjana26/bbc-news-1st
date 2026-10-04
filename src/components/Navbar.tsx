@@ -1,5 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
+import Navlinks from './Navlinks';
+import Marquee from './Marquee';
+// import Category from '@/type/category';
+
+
+// interface NavLinksProps {
+//   categories: Category[];
+// }
 
 const Navbar = () => {
     const date = new Date().toLocaleDateString("bn-BD",{
@@ -7,7 +15,8 @@ const Navbar = () => {
     })
     console.log(date)
     return (
-    <div className='flex justify-between'>
+  <div>
+      <div className='flex justify-between'>
         <div>
 
         </div>
@@ -27,6 +36,9 @@ const Navbar = () => {
 </div>
 
     </div>
+    <Navlinks></Navlinks>
+    <Marquee></Marquee>
+  </div>
     );
 };
 
