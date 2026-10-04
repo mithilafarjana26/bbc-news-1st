@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import Navlinks from './Navlinks';
-import Marquee from './Marquee';
 // import Category from '@/type/category';
 
 
@@ -37,7 +36,7 @@ const Navbar = () => {
 
     </div>
     <Navlinks></Navlinks>
-    <Marquee></Marquee>
+  
   </div>
     );
 };
